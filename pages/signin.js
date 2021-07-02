@@ -8,9 +8,6 @@ export default function SignIn({ providers }) {
       <div>
         <div>
           {Object.values(providers).map((provider) => {
-            if (provider.name === "Email") {
-              return;
-            }
             return (
               <div key={provider.name}>
                 <button
